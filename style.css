@@ -2,21 +2,30 @@
     margin:0;
     scroll-behavior: smooth;
     padding: 0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
-    /* background-color: #fff; */
+    /* background-color: red; */
+}
+html{
+    background-color: rgb(250, 250, 250);
+    margin:0px;
+    border: none;
+    padding: 0;
 }
 .root{
     display: flex;
     background-color: rgb(250, 250, 250);
-    width:98.5vw;
+    margin-right: 0px;
     /* background-color: #3582f6; */
-    margin: 0;
+    /* margin: 10px; */
     height:700px;
     padding:0;
+    margin-top: 30px;
     
 }
 .main{
+    margin: 0;
+    padding: 0;
     height: 500px;
     width: 100%;
     /* background-color: #000; */
@@ -26,18 +35,18 @@
 .middle{
     display: flex;
     background-color:rgb(250, 250, 250);
-    height: max-content;
-    margin: 32px auto;
-    padding-bottom: 32px;
+    height: max-content ;
+    padding-bottom: 80px;
     width: 100%;
-    max-width: 935px;
-    justify-content: space-between;
+    max-width: 800px;
+
 
 }
 .leftContainer{
-
+    /* transform: translateX(30px); */
     background-image: url(/public/1dc085cdb87d.png);
-   -webkit-box-align: stretch;
+   width: 510px;
+   /* -webkit-box-align: stretch; */
         -webkit-align-items: stretch;
         -ms-flex-align: stretch;
         align-items: stretch;
@@ -63,32 +72,29 @@
  
 }
 .rightContainer{
-    background-color:rgb(250, 250, 250);
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
+    /* background-color:rgb(73, 30, 30); */
+    /* -webkit-align-self: center; */
+    /* -ms-flex-item-align: center; */
     display: flex;
-    width: max-content;
+    transform: translateX(-50px);
+    
     flex-direction:column;
-    justify-content: center;
-    align-content: center;
-    background-image: url(/Users/freshMac/Documents/VSCODES/insta%20clone/public);
     background-position: -46px 0;
     background-size: 468.32px 634.15px;
-    -webkit-flex-basis: 380.32px;
-    -ms-flex-preferred-size: 380.32px;
-    flex-basis: 380.32px;
-    height: 581.15px;
+    -webkit-flex-basis: 350px;
+    -ms-flex-preferred-size: 350px;
+    flex-basis: 350px;
+    height: 600.15px;
     margin-bottom: 12px;
-
 
 }
  .imgHolder{
     /* align-items:stretch; */
     /* box-sizing: border-box; */
-    margin: 27px 0 0 113px;
     position: absolute;
     display: flex;
+    /* width: 100px; */
+    margin: 0 auto;
     flex-direction: column;
     flex-shrink: 0;
 }
@@ -98,8 +104,8 @@
     display: flex;
     position: relative;
     top:25px;
-    left: 155px;
-    width: 50%;
+    left: 156px;
+    width: 49%;
     z-index: 2;
     /*
     position: absolute;
@@ -153,27 +159,21 @@
 
 .rightBox{
     display: flex;
+    align-items: center;
     background-color:#fff;
-    margin: 0 20px;
-    margin-top:35px;
-    padding:75px 0;
-    height: 275px;
-    justify-content: flex-start;
+    margin-top:15px;
+    padding-top: 50px;
+    height: 360px;
     flex-direction: column;
+    width: 348px;
     /* box-shadow: 0 0 1em rgb(170, 170, 170); */
-    outline: 0.5px solid rgb(209, 209, 209);
+    outline: 0.5px solid rgb(213, 213, 213);
+}
 
-}
-.rightBox hr{
-    justify-content: center;
-    margin: 0 auto;
-    align-content: center;
-    width: 310px;
-}
 .instagramLogoContainer{
     display: flex;
-    height: 20%;
-    margin-bottom: 50px;
+    /* height: 20%; */
+    margin-bottom: 20px;
     justify-content: center;
     align-content: flex-start;
 }
@@ -184,13 +184,19 @@
 .loginForm{
     display: flex;
     flex-direction: column;
-}
-.loginForm input{
-    margin: 10px;
-    padding: 5px;
+    width: 100%;
+    border: none;
 }
 .enterButton{
-    background-color: #3582f6;
+    margin:6px 33px;
+    /* padding:0 1px; */
+    display: flex;
+    height: 24px;
+    justify-content: center;
+    align-content: center;
+    border:none;
+    /* outline: 1px solid rgb(200, 200, 200); */
+    background-color: #b6dcef;
     color: white;
     border: none;
 	padding: 0;
@@ -198,8 +204,36 @@
 	cursor: pointer;
 	outline: inherit;
     border-radius: 5px;
-    padding:5px
     
+}
+.textInput{
+    margin:6px 35px;
+    padding:0 10px;
+    height: 38px;
+    border:none;
+    outline: 1px solid rgb(237, 237, 237);
+    background-color: rgb(244, 244, 244);
+border: none;
+font: inherit;
+cursor: pointer;
+outline: 0.5px solid rgb(230, 230, 230);
+font-size: 0.75em;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+hr{
+    flex-direction: row;
+    margin: 20px;
+    width: 125px;
+}
+.hrdiv{
+    display: flex;
+    flex-direction: row;
+}
+
+.enterButton:hover{
+    background-color: #3582f6;
 }
 footer{
     background-color: rgb(250, 250, 250);
@@ -211,6 +245,7 @@ footer{
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 .5vw;
+    margin-top:20px;
     text-align: center;
 }
 footer a{
@@ -228,24 +263,31 @@ footer a{
 }
 .flex-dir{
     display: flex;
-    margin-top: 20px;
     justify-content: center;
     /* background-color: green; */
 }
 #entrarComFace{
     display: flex;
-    color:black;
+    /* background-color: #a55a55; */
+    width:100%;
+    color:blue;
     border: none;
 	padding: 0;
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
     border-radius: 5px;
-    padding:5px;
-    text-align: center;
-    width:auto;
-    height: 10px;
+    justify-content: center;
+    align-items: center;
+    height:60px;
 }
+#entrarComFace:hover{
+ color: #3582f6;   
+}
+
+#entrarComFace:focus{
+    color: #3582f6;   
+   }
 #facebookLogo{
     display: flex;
     justify-content: center;
@@ -253,38 +295,34 @@ footer a{
     align-self: center;
     width: 14px;
     height: 14px;
-    padding-right: 5px;
+    padding-right: 10px;
     background-color: #fff;
     padding-left: 10px;
     
 }
-.textInput{
-background-color: rgb(244, 244, 244);
-padding:9px;
-border: none;
-padding: 0;
-font: inherit;
-cursor: pointer;
-outline: 0.5px solid gray;
-}
+
+
 .forgot{
+    font-size: 0.8em;
     display: flex;
     /* background-color:#999; */
     justify-content: center;
     text-align: center;
-    padding: 15px 0;
+    padding-bottom:15px
 }
 .forgot:hover{
     color:#3582f6
 }
 .second-rightBox{
-    margin: 15px 20px;;
+    margin: 15px 0px;
     background-color: #fff; 
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 25px;
-    height: 35px;
+    padding: 15px 0;
+    font-size: 0.9em;
+    width: 348px;
+    height: 15px;
     justify-content: flex-start;
     flex-direction: column;
     /* box-shadow: 0 0 1em rgb(170, 170, 170); */
@@ -293,6 +331,7 @@ outline: 0.5px solid gray;
 .obtenha{
     font-family: inherit;
     text-align: center;
+    font-size: 0.85em;
 }
 .baixeOApp{
     display: flex;
@@ -310,6 +349,9 @@ outline: 0.5px solid gray;
     display: flex;
 max-width: 350px;
 height: 40px;
+}
+#hover{
+    color: blue;
 }
 #hover:hover{
     color:#3582f6
