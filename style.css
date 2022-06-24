@@ -33,6 +33,7 @@ html{
     /* background-color: #000; */
     display: flex;
     justify-content: center;
+    
 }
 .middle{
     display: flex;
@@ -41,7 +42,7 @@ html{
     margin-left: 20px;
     padding-bottom: 80px;
     width: 80%;
-    max-width: 900px;
+    max-width: 870px;
 
 
 }
@@ -89,6 +90,7 @@ html{
     -ms-flex-preferred-size: 350px;
     flex-basis: 350px;
     height: 600.15px;
+    margin-left: 5px;
     margin-bottom: 12px;
 
 }
@@ -104,20 +106,12 @@ html{
 }
 
 .UI{
-    z-index: -1;
     display: flex;
     position: relative;
     top:25px;
     left: 156px;
-    width: 54.7%;
+    width: 55.7%;
     z-index: 2;
-    /*
-    position: absolute;
-    left: 150px;
-    top:20px;
-    width: 250px;
-    height: 538.84px;
-    justify-content: center; */
     }
 
 
