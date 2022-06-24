@@ -116,7 +116,7 @@ html{
     /* z-index: -1; */
     /* visibility: hidden;*/ 
     animation: opaciter 2s cubic-bezier(.13,.91,.58,1)0s infinite;
-    animation-duration:25s;
+    animation-duration:30s;
 }
 
 .UI2{
@@ -297,10 +297,11 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
 hr{
     flex-direction: row;
     margin: 20px;
-    width: 125px;
+    width: 100px;
 }
 .hrdiv{
     display: flex;
+    justify-content: center;
     flex-direction: row;
 }
 
