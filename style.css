@@ -43,7 +43,7 @@ html{
 
 }
 .leftContainer{
-    /* transform: translateX(30px); */
+    /* transform: translateX(30px); \/ working?*/
     background-image: url(/instagram-landing-page-login-clone/docs/assets/1dc085cdb87d.png);
    width: 510px;
    /* -webkit-box-align: stretch; */
