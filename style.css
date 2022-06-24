@@ -44,7 +44,7 @@ html{
 }
 .leftContainer{
     /* transform: translateX(30px); */
-    background-image: url(/public/1dc085cdb87d.png);
+    background-image: url(/docs/assets/1dc085cdb87d.png);
    width: 510px;
    /* -webkit-box-align: stretch; */
         -webkit-align-items: stretch;
@@ -385,4 +385,14 @@ height: 40px;
         margin: 0 auto;
 
     }
+}
+.UI2{
+    width: 0px;
+opacity: 0;
+    visibility: hidden;
+}
+.UI3{
+    width: 0px;
+opacity: 0;
+    visibility: hidden
 }
