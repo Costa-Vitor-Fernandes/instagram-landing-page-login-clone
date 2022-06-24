@@ -297,6 +297,7 @@ height: 40px;
 }
 #lastLine{
     display: flex;
+    font-size: 0.5em;
     /* background-color: #3582f6; */
 }
 .footerHolder{
@@ -304,7 +305,8 @@ height: 40px;
     justify-content: center;
     flex-wrap: wrap;
     /* background-color: green; */
-    margin: 0 5vw;
+    margin: 20px 5vw;
+    font-size: 0.75em;
     text-align: center;
     flex-direction: row;
 }
